@@ -17,6 +17,7 @@ body{
     color: #D43D26;
     font-size: 24px;
     font-weight: 600;
+    width: 100%;
 }
 .navbar{
     color: #1E1E1E;
@@ -24,12 +25,14 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
+    
 }
 ul{
     display: flex;
     list-style: none;
     margin-left: 64px;
     list-style-type: none;
+    width: 100%;
 }
 li{
     font-size: 16px;
@@ -56,23 +59,47 @@ li a:hover:not(.active) {
     display: flex;
     flex-direction: row;
     height: 56px;
-    margin-left: 140px;
+    margin-left: 100px;
     align-self: center;
 }
-.call{
-    border: 1px solid #1AAEC8;
-    padding: 18px 15px;
-    height: 56px;
+.callButton{
+    background-color: #ffffff;
+    padding: 15px 15px;
     font-size: 14px;
+    height: 56px;
+    width: 180px;
+    color: #1AAEC8;
+    margin-left: 24px;
+    border: 1px solid #1AAEC8;
+    border-radius: 2px;
+    position: relative;
     text-align: center;
-    color: #1AAEC8;   
+    cursor: pointer;
 }
-.button{
+.callButton:hover:not(.active) {
+    text-decoration: none;
+    color: #1AAEC8;
+    background-color: #1aaec84f;
+}
+.active {
+    background-color: #09323aa2;
+}
+.quoteButton{
     background-color: #D43D26;
-    padding: 18px 15px;
+    padding: 15px 15px;
     font-size: 14px;
     height: 56px;
     color: #ffffff;
+    width: 180px;
     margin-left: 24px;
+    border: 1px solid #D43D26;
+    border-radius: 2px;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
 }
-  
+.quoteButton:hover:not(.active) {
+    text-decoration: none;
+    background-color: #d43d2679;
+    color: #ffffff;
+}
